@@ -6,7 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/svg+xml" href="./img/img_perfil.webp">
-  <title>frankDev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>FrankDev</title>
 </head>
 
 <body>
@@ -31,18 +38,19 @@
             <span id="text"></span><span id="cursor"></span>
           </div>
           <div class="container_button_hero">
-            <a class="button_hero" href="#contact">Contactame</a>
-            <a class="button_hero_CV" href="#">Descargar CV</a>
+            <a class="button_hero button_hero_contact" href="#contact">Contactame</a>
+            <a class="button_hero button_hero_CV" href="./assets/CV-Francella-Campos-Cortez .pdf"
+              target="_blank"><span>Descargar CV</span></a>
           </div>
         </div>
         <aside>
-          <img src="./img/img_perfil.webp" alt="">
+          <img class="img_hero" src="./assets/img/img_perfil.webp" alt="">
         </aside>
       </div>
     </section>
     <div class="wave">
       <div class="nose">
-        <svg xmlns="http://www.w3.org/2000/svg" width="3840" height="2160" viewBox="0 0 3840 2160">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#161616" width="3840" height="2160" viewBox="0 0 3840 2160">
 
           <path id="Forma_1" data-name="Forma 1" class="cls-1"
             d="M-250.006,91.048S302.986-80.442,657.372,74.516C1111.05,272.889,1316.36,172.363,1433,146,1809.87,60.82,2281.93.264,2761,212,3290.68,446.107,3960.39,34.394,3994-40l12,2248-4254,33Z" />
@@ -50,35 +58,20 @@
       </div>
 
     </div>
-    <!-- <section class="skills">
-      <h2 class="titulo_skills">Skills</h2>
-      <div class="caja">
-        <div class="content">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur odio non nostrum earum enim nisi
-            tenetur similique doloribus error. Praesentium voluptatem recusandae doloremque quis, quod ipsum aperiam
-            distinctio debitis maxime!</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills">
-      <h2>Tools</h2>
-      <div>
-        aqui van las herramientas
-      </div>
-    </section> -->
-
     <!-- About me -->
     <section id="about" class="about">
       <h2 class="titulo_about">About me</h2>
       <div class="container_about">
         <div class="img_container_about">
-          <img class="img_about" src="./img/escri.webp" alt="">
+          <img class="img_about" src="./assets/img/escri.webp" alt="">
         </div>
         <div class="text_about">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic doloremque nobis dolore voluptatum sapiente
-            enim nemo! Tempore iure fuga sit at. Fuga doloremque, ratione quidem reprehenderit quod cumque accusantium
-            vitae!</p>
+          <p>
+            Soy un desarrolladora web apasionada por la creación de aplicaciones web interactivas y responsivas.
+            Tengo experiencia trabajando con JavaScript, React,Vue, Node.js, HTML,
+            CSS y Git. Aprendo rápido y siempre busco ampliar mis conocimientos y habilidades. Trabajo en equipo y me
+            entusiasma trabajar con otros para crear aplicaciones increíbles.
+          </p>
           <div id="menu">
             <!-- El menú se generará dinámicamente con JavaScript -->
           </div>
@@ -92,15 +85,15 @@
     </section>
     <!-- Proyectos -->
     <section id="portfolio" class="proyects">
-      <h2 class="titulo_skills">Proyectos</h2>
+      <h2 class="titulo_proyect">Proyectos</h2>
       <div class="conteiner_proyect">
         <div class="card_proyects">
           <div class="img_container">
-            <img class="proyect_img" src="./img/img_default_proyect.webp" alt="">
+            <img class="proyect_img" src="./assets/img/apiClima.png" alt="">
             <div class="hover">
               <div class="icon_conteiner">
                 <div class="icon_info">
-                  <a href="">
+                  <a href="https://api-clima-kappa.vercel.app/">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#f9f8f8" height="50" viewBox="0 -960 960 960"
                       width="50">
                       <path
@@ -109,7 +102,7 @@
                   </a>
                 </div>
                 <div class="icon_info">
-                  <a href="">
+                  <a href="https://github.com/francellaCC/apiClima.git">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#f9f8f8" height="50" viewBox="0 -960 960 960"
                       width="50">
                       <path
@@ -122,17 +115,17 @@
           </div>
           <div class="container_info">
             <h3 class="subtitle_proyect">Nombre proyecto</h3>
-            <p>Project description 1 </p>
+            <p class="desscription_proyects">Project description 1 </p>
           </div>
         </div>
 
         <div class="card_proyects">
           <div class="img_container">
-            <img class="proyect_img" src="./img/img_default_proyect.webp" alt="">
+            <img class="proyect_img" src="./assets/img/Lista_libros.png" alt="">
             <div class="hover">
               <div class="icon_conteiner">
                 <div class="icon_info">
-                  <a href="">
+                  <a href="https://lista-libros-react.vercel.app/">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#f9f8f8" height="50" viewBox="0 -960 960 960"
                       width="50">
                       <path
@@ -141,7 +134,7 @@
                   </a>
                 </div>
                 <div class="icon_info">
-                  <a href="">
+                  <a href="https://github.com/francellaCC/lista-libros-react.git">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#f9f8f8" height="50" viewBox="0 -960 960 960"
                       width="50">
                       <path
@@ -153,18 +146,18 @@
             </div>
           </div>
           <div class="container_info">
-            <h3 class="subtitle_proyect">Nombre proyecto</h3>
-            <p>Project description 1 </p>
+            <h3 class="subtitle_proyect">Proyecto Unkai Book</h3>
+            <p class="desscription_proyects">Project description 1 </p>
           </div>
         </div>
 
         <div class="card_proyects">
           <div class="img_container">
-            <img class="proyect_img" src="./img/img_default_proyect.webp" alt="">
+            <img class="proyect_img" src="./assets/img/buscador_bebidas.png" alt="">
             <div class="hover">
               <div class="icon_conteiner">
                 <div class="icon_info">
-                  <a href="">
+                  <a href="https://buscardor-bebidas.vercel.app/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#f9f8f8" height="50" viewBox="0 -960 960 960"
                       width="50">
                       <path
@@ -173,7 +166,7 @@
                   </a>
                 </div>
                 <div class="icon_info">
-                  <a href="">
+                  <a href="https://github.com/francellaCC/BuscardorBebidas.git" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#f9f8f8" height="50" viewBox="0 -960 960 960"
                       width="50">
                       <path
@@ -185,8 +178,8 @@
             </div>
           </div>
           <div class="container_info">
-            <h3 class="subtitle_proyect">Nombre proyecto</h3>
-            <p>Project description 1 </p>
+            <h3 class="subtitle_proyect">Buscador de bebidas</h3>
+            <p class="desscription_proyects">Project description 1 </p>
           </div>
         </div>
 
@@ -195,14 +188,13 @@
     <section id="contact" class="contact">
       <div class="caja_contact">
         <h3 class="contact_titulo">Contactame</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus illum laudantium ducimus est animi
-          inventore odit nesciunt. Fuga dicta rerum corporis nostrum, vel quos, ipsum ipsam est modi laboriosam
-          blanditiis!
-        </p>
-        <div >
-          <img src="./img/img_default_proyect.webp" alt="">
-          <img src="./img/img_default_proyect.webp" alt="">
-          <img src="./img/img_default_proyect.webp" alt="">
+        <p class="description_contact">Actualmente estoy buscando nuevas oportunidades, mi bandeja de entrada está
+          siempre abierta. Si tienes alguna
+          pregunta o simplemente quieres saludar, ¡haré todo lo posible para responderte!</p>
+        <div>
+          <img class="contac_icon" src="./assets/img/github-light.svg" alt="logo github">
+          <img class="contac_icon icon_2" src="./assets/img/linkedin.svg" alt="logo linkedin">
+
         </div>
       </div>
       <div>
@@ -229,6 +221,7 @@
 
   <script src="./js/menuAbout.js"></script>
   <script src="./js/efectomaquina.js"></script>
+  <script src="./js/efectCard.js"></script>
 </body>
 
 </html>

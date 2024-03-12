@@ -14,17 +14,16 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Education",
+    title: "Educación",
     id: "education",
     content: (
       '<ul class="list-disc pl-2">' +
-      '<li>Fullstack Academy of Code</li>' +
-      '<li>University of California, Santa Cruz</li>' +
+      '<li>Informática y Tecnología Multimedia, UCR</li>' +
       '</ul>'
     ),
   },
   {
-    title: "Tools",
+    title: "Herramientas",
     id: "tools",
     content: (
       '<ul class="list-disc pl-2">' +
@@ -36,52 +35,12 @@ const TAB_DATA = [
     ),
   },
 ];
-// Nuevo array para la máquina de escribir
-// const textArray = [
-//   "Francella",
-//   "Web Developer",
-//   "Front-end Developer"
-// ];
-
 
 document.addEventListener("DOMContentLoaded", function () {
   // const typedText = document.getElementById("typed-text");
   const menu = document.getElementById("menu");
   const content = document.getElementById("content");
 
-
-  // let wordIndex = 0;
-  // let letterIndex = 0;
-
-  // function type() {
-  //   const currentWord = textArray[wordIndex];
-  //   const currentLetter = currentWord[letterIndex];
-
-  //   typedText.textContent += currentLetter;
-
-  //   letterIndex++;
-
-  //   if (letterIndex < currentWord.length) {
-  //     setTimeout(type, 150); // Espera antes de escribir la siguiente letra
-  //   } else {
-  //     setTimeout(clearAndTypeNext, 1000); // Espera antes de borrar y pasar a la siguiente palabra
-  //   }
-  // }
-
-  // function clearAndTypeNext() {
-  //   setTimeout(() => {
-  //     clearText();
-  //     wordIndex = (wordIndex + 1) % textArray.length;
-  //     letterIndex = 0;
-  //     type();
-  //   }, 500);
-  // }
-
-  // function clearText() {
-  //   typedText.textContent = "";
-  // }
-
-  // type();
 
   // Código para el menú dinámico
   let activeElement = null;
@@ -90,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
   TAB_DATA.forEach((item, index) => {
     const li = document.createElement("li");
     li.textContent = item.title;
+    li.className = "menu_link"
     li.addEventListener("click", () => showContent(item, li));
     menu.appendChild(li);
 

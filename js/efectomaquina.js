@@ -42,5 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  type();
+  setTimeout(() => {
+    type();
+  }, 1000);
 });
